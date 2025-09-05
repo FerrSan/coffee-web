@@ -1,20 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Coffee | FerrSan</title>
     <!-- Linking Font Awesome For Icon-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="style.css" />
-</head>
+  </head>
 
-<body>
-    <!-- Loading Screen --->
+  <body>
+    <!-- Loading Screen --->-
     <div class="loader">
-        <div class="coffee-loader"></div>
+      <div class="coffee-loader"></div>
     </div>
 
     <!-- Custom Cursor -->
@@ -22,287 +27,453 @@
 
     <!-- Header / Navbar -->
     <header>
-        <nav class="navbar section-content">
-            <a href="#" class="nav-logo">
-                <h2 class="logo-text">☕ Coffee Shop</h2>
-            </a>
-            <ul class="nav-menu">
-                <button id="menu-close-button" class="fas fa-times"></button>
-                <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
-                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
-                <li class="nav-item"><a href="#menu" class="nav-link">Menu</a></li>
-                <li class="nav-item"><a href="#testimonials" class="nav-link">Testimonials</a></li>
-                <li class="nav-item"><a href="#gallery" class="nav-link">Gallery</a></li>
-                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
-            </ul>
-            <button id="menu-open-button" class="fas fa-bars"></button>
-        </nav>
+      <nav class="navbar section-content">
+        <a href="#" class="nav-logo">
+          <h2 class="logo-text">☕ Coffee Shop</h2>
+        </a>
+        <ul class="nav-menu">
+          <button id="menu-close-button" class="fas fa-times"></button>
+          <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="#menu" class="nav-link">Menu</a></li>
+          <li class="nav-item">
+            <a href="#testimonials" class="nav-link">Testimonials</a>
+          </li>
+          <li class="nav-item">
+            <a href="#gallery" class="nav-link">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link">Contact</a>
+          </li>
+        </ul>
+        <button id="menu-open-button" class="fas fa-bars"></button>
+      </nav>
     </header>
 
     <!-- Hero Section -->
     <main>
-        <section class="hero-section" id="home">
-            <div class="section-content">
-                <div class="hero-details">
-                    <h2 class="title">Premium Coffee Experience</h2>
-                    <h3 class="subtitle">Discover the Perfect Blend of Taste and Ambiance</h3>
-                    <p class="description">
-                        Welcome to our artisan coffee shop where every cup tells a story. 
-                        Experience the finest coffee beans, expertly roasted and brewed to perfection.
-                    </p>
-                    <div class="buttons">
-                        <a href="#menu" class="button order-now">Explore Menu</a>
-                        <a href="#contact" class="button contact-us">Get in Touch</a>
-                    </div>
-                </div>
-                <div class="hero-image-wrapper">
-                    <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600" alt="Coffee" class="hero-image" />
-                </div>
+      <section class="hero-section" id="home">
+        <div class="section-content">
+          <div class="hero-details">
+            <h2 class="title">Premium Coffee Experience</h2>
+            <h3 class="subtitle">
+              Discover the Perfect Blend of Taste and Ambiance
+            </h3>
+            <p class="description">
+              Welcome to our artisan coffee shop where every cup tells a story.
+              Experience the finest coffee beans, expertly roasted and brewed to
+              perfection.
+            </p>
+            <div class="buttons">
+              <a href="#menu" class="button order-now">Explore Menu</a>
+              <a href="#contact" class="button contact-us">Get in Touch</a>
             </div>
-        </section>
+          </div>
+          <div class="hero-image-wrapper">
+            <img
+              src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600"
+              alt="Coffee"
+              class="hero-image"
+            />
+          </div>
+        </div>
+      </section>
 
-        <!-- About Section -->
-        <section class="about-section reveal" id="about">
-            <div class="section-content">
-                <div class="about-image-wrapper">
-                    <img src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?w=500" alt="About Us" class="about-image">
-                </div>
-                <div class="about-details">
-                    <h2 class="section-title">Our Story</h2>
-                    <p class="text">
-                        Founded in 2020, our coffee shop was born from a passion for exceptional coffee and the desire to create a warm, welcoming space for our community. We partner directly with local farmers and the finest roasters to ensure every sip delivers an authentic and memorable experience.
-                        <br><br>
-                        We believe coffee is more than just a beverage – it's an experience, a culture, and a bridge between people. Our carefully curated menu features specialty coffee drinks, artisanal pastries, and healthy snacks to complement your perfect cup.
-                        <br><br>
-                        Thank you for being part of our journey. Sit back, breathe in the aroma, and enjoy the warmth we serve in every cup.
-                    </p>
-                    <div class="social-link-list">
-                        <a href="#" class="social-link"><i class="fa-brands fa-facebook"></i></a>
-                        <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="#" class="social-link"><i class="fa-brands fa-x-twitter"></i></a>
-                        <a href="#" class="social-link"><i class="fa-brands fa-pinterest"></i></a>
-                    </div>
-                </div>
+      <!-- About Section -->
+      <section class="about-section reveal" id="about">
+        <div class="section-content">
+          <div class="about-image-wrapper">
+            <img
+              src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?w=500"
+              alt="About Us"
+              class="about-image"
+            />
+          </div>
+          <div class="about-details">
+            <h2 class="section-title">Our Story</h2>
+            <p class="text">
+              Founded in 2020, our coffee shop was born from a passion for
+              exceptional coffee and the desire to create a warm, welcoming
+              space for our community. We partner directly with local farmers
+              and the finest roasters to ensure every sip delivers an authentic
+              and memorable experience.
+              <br /><br />
+              We believe coffee is more than just a beverage – it's an
+              experience, a culture, and a bridge between people. Our carefully
+              curated menu features specialty coffee drinks, artisanal pastries,
+              and healthy snacks to complement your perfect cup.
+              <br /><br />
+              Thank you for being part of our journey. Sit back, breathe in the
+              aroma, and enjoy the warmth we serve in every cup.
+            </p>
+            <div class="social-link-list">
+              <a href="#" class="social-link"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a href="#" class="social-link"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="#" class="social-link"
+                ><i class="fa-brands fa-x-twitter"></i
+              ></a>
+              <a href="#" class="social-link"
+                ><i class="fa-brands fa-pinterest"></i
+              ></a>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
 
-        <!-- Menu Section -->
-        <section class="menu-section reveal" id="menu">
-            <h2 class="section-title">Our Specialties</h2>
-            <div class="section-content">
-                <ul class="menu-list">
-                    <li class="menu-item">
-                        <img src="https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?w=300" alt="Hot Beverages" class="menu-image">
-                        <div class="menu-details">
-                            <h3 class="name">Hot Beverages</h3>
-                            <p class="text">Rich espresso, creamy cappuccinos, and aromatic lattes to warm your soul</p>
-                        </div>
-                    </li>
-                    <li class="menu-item">
-                        <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=300" alt="Cold Beverages" class="menu-image">
-                        <div class="menu-details">
-                            <h3 class="name">Cold Beverages</h3>
-                            <p class="text">Refreshing iced coffees, cold brews, and signature frappés</p>
-                        </div>
-                    </li>
-                    <li class="menu-item">
-                        <img src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?w=300" alt="Refreshments" class="menu-image">
-                        <div class="menu-details">
-                            <h3 class="name">Fresh Juices</h3>
-                            <p class="text">Natural fruit juices and smoothies packed with vitamins</p>
-                        </div>
-                    </li>
-                    <li class="menu-item">
-                        <img src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=300" alt="Special Combos" class="menu-image">
-                        <div class="menu-details">
-                            <h3 class="name">Special Combos</h3>
-                            <p class="text">Perfect pairings of coffee and freshly baked pastries</p>
-                        </div>
-                    </li>
-                    <li class="menu-item">
-                        <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?w=300" alt="Desserts" class="menu-image">
-                        <div class="menu-details">
-                            <h3 class="name">Desserts</h3>
-                            <p class="text">Decadent cakes, cookies, and artisanal pastries</p>
-                        </div>
-                    </li>
-                    <li class="menu-item">
-                        <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=300" alt="Snacks" class="menu-image">
-                        <div class="menu-details">
-                            <h3 class="name">Gourmet Snacks</h3>
-                            <p class="text">Sandwiches, salads, and healthy bites</p>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </section>
+      <!-- Menu Section -->
+      <section class="menu-section reveal" id="menu">
+        <h2 class="section-title">Our Specialties</h2>
+        <div class="section-content">
+          <ul class="menu-list">
+            <li class="menu-item">
+              <img
+                src="https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?w=300"
+                alt="Hot Beverages"
+                class="menu-image"
+              />
+              <div class="menu-details">
+                <h3 class="name">Hot Beverages</h3>
+                <p class="text">
+                  Rich espresso, creamy cappuccinos, and aromatic lattes to warm
+                  your soul
+                </p>
+              </div>
+            </li>
+            <li class="menu-item">
+              <img
+                src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=300"
+                alt="Cold Beverages"
+                class="menu-image"
+              />
+              <div class="menu-details">
+                <h3 class="name">Cold Beverages</h3>
+                <p class="text">
+                  Refreshing iced coffees, cold brews, and signature frappés
+                </p>
+              </div>
+            </li>
+            <li class="menu-item">
+              <img
+                src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?w=300"
+                alt="Refreshments"
+                class="menu-image"
+              />
+              <div class="menu-details">
+                <h3 class="name">Fresh Juices</h3>
+                <p class="text">
+                  Natural fruit juices and smoothies packed with vitamins
+                </p>
+              </div>
+            </li>
+            <li class="menu-item">
+              <img
+                src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=300"
+                alt="Special Combos"
+                class="menu-image"
+              />
+              <div class="menu-details">
+                <h3 class="name">Special Combos</h3>
+                <p class="text">
+                  Perfect pairings of coffee and freshly baked pastries
+                </p>
+              </div>
+            </li>
+            <li class="menu-item">
+              <img
+                src="https://images.unsplash.com/photo-1488477181946-6428a0291777?w=300"
+                alt="Desserts"
+                class="menu-image"
+              />
+              <div class="menu-details">
+                <h3 class="name">Desserts</h3>
+                <p class="text">
+                  Decadent cakes, cookies, and artisanal pastries
+                </p>
+              </div>
+            </li>
+            <li class="menu-item">
+              <img
+                src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=300"
+                alt="Snacks"
+                class="menu-image"
+              />
+              <div class="menu-details">
+                <h3 class="name">Gourmet Snacks</h3>
+                <p class="text">Sandwiches, salads, and healthy bites</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
 
-        <!-- Testimonials Section -->
-        <section class="testimonials-section reveal" id="testimonials">
-            <h2 class="section-title">What Our Customers Say</h2>
-            <div class="section-content">
-                <div class="slider-wrapper swiper">
-                    <ul class="testimonials-list swiper-wrapper">
-                        <li class="testimonial swiper-slide">
-                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200" alt="Customer" class="user-image">
-                            <h3 class="name">Michael Chen</h3>
-                            <p class="feedback">"The best coffee shop in town! The atmosphere is perfect for both work and relaxation. Their specialty lattes are absolutely divine."</p>
-                        </li>
-                        <li class="testimonial swiper-slide">
-                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200" alt="Customer" class="user-image">
-                            <h3 class="name">Sarah Johnson</h3>
-                            <p class="feedback">"I'm a regular here and the quality never disappoints. The staff is friendly and the coffee is consistently excellent. Highly recommend!"</p>
-                        </li>
-                        <li class="testimonial swiper-slide">
-                            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200" alt="Customer" class="user-image">
-                            <h3 class="name">Emma Williams</h3>
-                            <p class="feedback">"A hidden gem! The ambiance is cozy and inviting. Their pastries are fresh and pair perfectly with their artisan coffee."</p>
-                        </li>
-                        <li class="testimonial swiper-slide">
-                            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200" alt="Customer" class="user-image">
-                            <h3 class="name">James Anderson</h3>
-                            <p class="feedback">"This place has become my second office. Great wifi, amazing coffee, and the perfect environment for productivity."</p>
-                        </li>
-                        <li class="testimonial swiper-slide">
-                            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=200" alt="Customer" class="user-image">
-                            <h3 class="name">Lisa Martinez</h3>
-                            <p class="feedback">"The attention to detail in every cup is remarkable. You can taste the quality and care that goes into their coffee."</p>
-                        </li>
-                    </ul>
-                    <div class="swiper-pagination"></div>
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
-                </div>
-            </div>
-        </section>
+      <!-- Testimonials Section -->
+      <section class="testimonials-section reveal" id="testimonials">
+        <h2 class="section-title">What Our Customers Say</h2>
+        <div class="section-content">
+          <div class="slider-wrapper swiper">
+            <ul class="testimonials-list swiper-wrapper">
+              <li class="testimonial swiper-slide">
+                <img
+                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200"
+                  alt="Customer"
+                  class="user-image"
+                />
+                <h3 class="name">Michael Chen</h3>
+                <p class="feedback">
+                  "The best coffee shop in town! The atmosphere is perfect for
+                  both work and relaxation. Their specialty lattes are
+                  absolutely divine."
+                </p>
+              </li>
+              <li class="testimonial swiper-slide">
+                <img
+                  src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200"
+                  alt="Customer"
+                  class="user-image"
+                />
+                <h3 class="name">Sarah Johnson</h3>
+                <p class="feedback">
+                  "I'm a regular here and the quality never disappoints. The
+                  staff is friendly and the coffee is consistently excellent.
+                  Highly recommend!"
+                </p>
+              </li>
+              <li class="testimonial swiper-slide">
+                <img
+                  src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200"
+                  alt="Customer"
+                  class="user-image"
+                />
+                <h3 class="name">Emma Williams</h3>
+                <p class="feedback">
+                  "A hidden gem! The ambiance is cozy and inviting. Their
+                  pastries are fresh and pair perfectly with their artisan
+                  coffee."
+                </p>
+              </li>
+              <li class="testimonial swiper-slide">
+                <img
+                  src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200"
+                  alt="Customer"
+                  class="user-image"
+                />
+                <h3 class="name">James Anderson</h3>
+                <p class="feedback">
+                  "This place has become my second office. Great wifi, amazing
+                  coffee, and the perfect environment for productivity."
+                </p>
+              </li>
+              <li class="testimonial swiper-slide">
+                <img
+                  src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=200"
+                  alt="Customer"
+                  class="user-image"
+                />
+                <h3 class="name">Lisa Martinez</h3>
+                <p class="feedback">
+                  "The attention to detail in every cup is remarkable. You can
+                  taste the quality and care that goes into their coffee."
+                </p>
+              </li>
+            </ul>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+      </section>
 
-        <!-- Gallery Section -->
-        <section class="gallery-section reveal" id="gallery">
-            <h2 class="section-title">Coffee Moments</h2>
-            <div class="section-content">
-                <div class="gallery-list">
-                    <div class="gallery-item">
-                        <img src="https://images.unsplash.com/photo-1445077100181-a33e9ac94db0?w=400" alt="Coffee Shop Interior" class="gallery-image">
-                    </div>
-                    <div class="gallery-item">
-                        <img src="https://images.unsplash.com/photo-1493857671505-72967e2e2760?w=400" alt="Coffee Making" class="gallery-image">
-                    </div>
-                    <div class="gallery-item">
-                        <img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=400" alt="Coffee Art" class="gallery-image">
-                    </div>
-                    <div class="gallery-item">
-                        <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?w=400" alt="Coffee Beans" class="gallery-image">
-                    </div>
-                    <div class="gallery-item">
-                        <img src="https://images.unsplash.com/photo-1459755486867-b55449bb39ff?w=400" alt="Barista at Work" class="gallery-image">
-                    </div>
-                    <div class="gallery-item">
-                        <img src="https://images.unsplash.com/photo-1498804103079-a6351b050096?w=400" alt="Coffee and Pastry" class="gallery-image">
-                    </div>
-                </div>
+      <!-- Gallery Section -->
+      <section class="gallery-section reveal" id="gallery">
+        <h2 class="section-title">Coffee Moments</h2>
+        <div class="section-content">
+          <div class="gallery-list">
+            <div class="gallery-item">
+              <img
+                src="https://images.unsplash.com/photo-1445077100181-a33e9ac94db0?w=400"
+                alt="Coffee Shop Interior"
+                class="gallery-image"
+              />
             </div>
-        </section>
+            <div class="gallery-item">
+              <img
+                src="https://images.unsplash.com/photo-1493857671505-72967e2e2760?w=400"
+                alt="Coffee Making"
+                class="gallery-image"
+              />
+            </div>
+            <div class="gallery-item">
+              <img
+                src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=400"
+                alt="Coffee Art"
+                class="gallery-image"
+              />
+            </div>
+            <div class="gallery-item">
+              <img
+                src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?w=400"
+                alt="Coffee Beans"
+                class="gallery-image"
+              />
+            </div>
+            <div class="gallery-item">
+              <img
+                src="https://images.unsplash.com/photo-1459755486867-b55449bb39ff?w=400"
+                alt="Barista at Work"
+                class="gallery-image"
+              />
+            </div>
+            <div class="gallery-item">
+              <img
+                src="https://images.unsplash.com/photo-1498804103079-a6351b050096?w=400"
+                alt="Coffee and Pastry"
+                class="gallery-image"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
 
-        <!-- Contact Section -->
-        <section class="contact-section reveal" id="contact">
-            <h2 class="section-title">Get In Touch</h2>
-            <div class="section-content">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <div>
-                            <h3>Visit Us</h3>
-                            <p>123 Coffee Street, Jakarta 12345</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-phone"></i>
-                        <div>
-                            <h3>Call Us</h3>
-                            <p>+62 123 456 7890</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <div>
-                            <h3>Email Us</h3>
-                            <p>hello@coffeeshop.com</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-clock"></i>
-                        <div>
-                            <h3>Opening Hours</h3>
-                            <p>Mon-Fri: 7AM - 10PM<br>Sat-Sun: 8AM - 11PM</p>
-                        </div>
-                    </div>
-                </div>
-                <form class="contact-form">
-                    <div class="form-group">
-                        <label for="name">Your Name</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Your Email</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" rows="5" required></textarea>
-                    </div>
-                    <button type="submit" class="submit-btn">Send Message</button>
-                </form>
+      <!-- Contact Section -->
+      <section class="contact-section reveal" id="contact">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="section-content">
+          <div class="contact-info">
+            <div class="contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <div>
+                <h3>Visit Us</h3>
+                <p>123 Coffee Street, Jakarta 12345</p>
+              </div>
             </div>
-        </section>
+            <div class="contact-item">
+              <i class="fas fa-phone"></i>
+              <div>
+                <h3>Call Us</h3>
+                <p>+62 123 456 7890</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <div>
+                <h3>Email Us</h3>
+                <p>hello@coffeeshop.com</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-clock"></i>
+              <div>
+                <h3>Opening Hours</h3>
+                <p>Mon-Fri: 7AM - 10PM<br />Sat-Sun: 8AM - 11PM</p>
+              </div>
+            </div>
+          </div>
+          <form class="contact-form">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Your Email</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Send Message</button>
+          </form>
+        </div>
+      </section>
     </main>
 
     <!-- Footer -->
     <footer>
-        <div class="section-content">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>About Coffee Shop</h3>
-                    <p>Your neighborhood coffee shop dedicated to serving the finest coffee and creating memorable experiences.</p>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-youtube"></i></a>
-                    </div>
-                </div>
-                <div class="footer-section">
-                    <h3>Quick Links</h3>
-                    <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About Us</a></li>
-                        <li><a href="#menu">Our Menu</a></li>
-                        <li><a href="#gallery">Gallery</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h3>Our Specialties</h3>
-                    <ul>
-                        <li>Artisan Coffee</li>
-                        <li>Fresh Pastries</li>
-                        <li>Healthy Snacks</li>
-                        <li>Specialty Drinks</li>
-                        <li>Catering Services</li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h3>Newsletter</h3>
-                    <p>Subscribe to get updates on new menu items and special offers!</p>
-                    <form style="margin-top: 15px;">
-                        <input type="email" placeholder="Your email" style="width: 100%; padding: 10px; border-radius: 5px; border: none; margin-bottom: 10px;">
-                        <button type="submit" style="width: 100%; padding: 10px; background: var(--secondary-color); color: var(--primary-color); border-radius: 5px; font-weight: 600; cursor: pointer;">Subscribe</button>
-                    </form>
-                </div>
+      <div class="section-content">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>About Coffee Shop</h3>
+            <p>
+              Your neighborhood coffee shop dedicated to serving the finest
+              coffee and creating memorable experiences.
+            </p>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 Coffee Shop. All rights reserved. | Designed with ❤️ by FerrSan</p>
-            </div>
+          </div>
+          <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#menu">Our Menu</a></li>
+              <li><a href="#gallery">Gallery</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Our Specialties</h3>
+            <ul>
+              <li>Artisan Coffee</li>
+              <li>Fresh Pastries</li>
+              <li>Healthy Snacks</li>
+              <li>Specialty Drinks</li>
+              <li>Catering Services</li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Newsletter</h3>
+            <p>
+              Subscribe to get updates on new menu items and special offers!
+            </p>
+            <form style="margin-top: 15px">
+              <input
+                type="email"
+                placeholder="Your email"
+                style="
+                  width: 100%;
+                  padding: 10px;
+                  border-radius: 5px;
+                  border: none;
+                  margin-bottom: 10px;
+                "
+              />
+              <button
+                type="submit"
+                style="
+                  width: 100%;
+                  padding: 10px;
+                  background: var(--secondary-color);
+                  color: var(--primary-color);
+                  border-radius: 5px;
+                  font-weight: 600;
+                  cursor: pointer;
+                "
+              >
+                Subscribe
+              </button>
+            </form>
+          </div>
         </div>
+        <div class="footer-bottom">
+          <p>
+            &copy; 2025 Coffee Shop. All rights reserved. | Designed with ❤️ by
+            FerrSan
+          </p>
+        </div>
+      </div>
     </footer>
 
     <!-- Linking Swiper script -->
@@ -310,6 +481,5 @@
 
     <!-- Linking custom script -->
     <script src="script.js"></script>
-</body>
-
+  </body>
 </html>
