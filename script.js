@@ -1,8 +1,50 @@
-  // Loader
+  // Debug external resources
+        window.addEventListener('error', (e) => {
+            console.error('Resource failed to load:', e.target.src || e.target.href);
+        });
+
+        // Loader
         window.addEventListener('load', () => {
+            console.log('Page loaded, hiding loader...');
             setTimeout(() => {
-                document.querySelector('.loader').classList.add('hidden');
+                const loader = document.querySelector('.loader');
+                if (loader) {
+                    loader.classList.add('hidden');
+                    console.log('Loader hidden');
+                    // Remove loader completely after transition
+                    setTimeout(() => {
+                        loader.style.display = 'none';
+                    }, 500);
+                } else {
+                    console.error('Loader element not found');
+                }
             }, 1000);
+        });
+
+        // Fallback to hide loader if window.load doesn't fire
+        document.addEventListener('DOMContentLoaded', () => {
+            console.log('DOM Content Loaded');
+            
+            // Check if basic elements exist
+            const loader = document.querySelector('.loader');
+            const header = document.querySelector('header');
+            const heroSection = document.querySelector('.hero-section');
+            
+            console.log('Elements found:', {
+                loader: !!loader,
+                header: !!header,
+                heroSection: !!heroSection
+            });
+            
+            setTimeout(() => {
+                if (loader && !loader.classList.contains('hidden')) {
+                    console.log('Fallback: hiding loader via DOMContentLoaded');
+                    loader.classList.add('hidden');
+                    setTimeout(() => {
+                        loader.style.display = 'none';
+                    }, 500);
+                }
+            }, 3000);
         });
 
         // Mobile Menu Toggle
@@ -37,7 +79,7 @@
         });
 
         // Prevent scrolling when mobile menu is open
-        const observer = new MutationObserver((mutations) => {
+        const menuObserver = new MutationObserver((mutations) => {
             mutations.forEach((mutation) => {
                 if (mutation.attributeName === 'class') {
                     const hasMenu = document.body.classList.contains('show-mobile-menu');
@@ -45,7 +87,7 @@
                 }
             });
         });
-        observer.observe(document.body, { attributes: true });
+        menuObserver.observe(document.body, { attributes: true });
 
         // Header scroll effect
         window.addEventListener('scroll', () => {
@@ -72,7 +114,9 @@
         });
 
         // Testimonials Slider
-        const swiper = new Swiper('.slider-wrapper', {
+        try {
+            if (typeof Swiper !== 'undefined') {
+                const swiper = new Swiper('.slider-wrapper', {
             loop: true,
             grabCursor: true,
             spaceBetween: 20,
@@ -119,7 +163,13 @@
                     centeredSlides: false
                 }
             }
-        });
+                });
+            } else {
+                console.error('Swiper library not loaded');
+            }
+        } catch (error) {
+            console.error('Error initializing Swiper:', error);
+        }
 
         // Scroll Reveal Animation
         const observerOptions = {
@@ -127,7 +177,7 @@
             rootMargin: '0px 0px -50px 0px'
         };
 
-        const observer = new IntersectionObserver(function(entries) {
+        const scrollObserver = new IntersectionObserver(function(entries) {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
                     entry.target.classList.add('active');
@@ -136,7 +186,7 @@
         }, observerOptions);
 
         document.querySelectorAll('.reveal').forEach(el => {
-            observer.observe(el);
+            scrollObserver.observe(el);
         });
 
         // Custom Cursor (for desktop)
